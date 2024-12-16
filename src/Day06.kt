@@ -5,6 +5,12 @@ enum class Direction { UP, RIGHT, DOWN, LEFT;
         DOWN -> LEFT
         LEFT -> UP
     }
+    fun rotateLeft() = when (this) {
+        UP -> LEFT
+        RIGHT -> UP
+        DOWN -> RIGHT
+        LEFT -> DOWN
+    }
 }
 
 fun main() {
